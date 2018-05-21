@@ -35,17 +35,17 @@ describe Parse do
     end
   end
 
-  describe '.next_page?' do
-    it 'returns true if a next page is present' do
-      expect(Parse.next_page?(@doc)).to eq(true)
+  describe '.last_page?' do
+    it 'returns false if a next page is present' do
+      expect(Parse.last_page?(@doc)).to eq(false)
     end
 
-    it 'returns false if a next page is present' do
+    it 'returns false if a next page is not present' do
       # change to the last page of results
       local_html_path = File.join(File.dirname(__FILE__), '/html_test_files', 'wgt_lp.html')
       @doc = Nokogiri::HTML(open(local_html_path))
 
-      expect(Parse.next_page?(@doc)).to eq(false)
+      expect(Parse.last_page?(@doc)).to eq(true)
     end
   end
 end

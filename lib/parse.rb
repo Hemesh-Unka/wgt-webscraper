@@ -13,6 +13,10 @@ class Parse
       events
     end
 
+    def next_page?(data)
+      !data.css('a.pagination_link_text.nextlink').empty?
+    end
+
     private
 
     def listings(event)

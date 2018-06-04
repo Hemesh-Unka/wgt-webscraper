@@ -40,8 +40,6 @@ After completing the above, in the home directory, there should be a new file ca
 ### Tests
 To run the tests, in the root directory type `rspec` to view all the tests.
 
-![](docs/tests.png)
-
 ### Process
 
 To begin with, I started setting up the framework for the project. I decided to use Ruby as I felt more comfortable with the RSpec testing framework and also as I knew that I would be using a lot of mocks to achieve what I wanted to do for this tech test. Also, I had heard about a Ruby scraper library called Nogokiri which I wanted to learn more about.

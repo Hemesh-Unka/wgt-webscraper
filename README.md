@@ -16,7 +16,7 @@ This information was then needed to be outputted to a readable format of my choi
 
 #### Getting Started
 1. Download and unzip the application onto your machine
-2. Redirect your console into the root of the directory `cd /songkick_tech_test`
+2. Redirect your console into the root of the directory `cd /wgt-webscraper`
 3. Ensure you have [Bundler](https://bundler.io/) installed by typing `bundle -v`.
 4. Install the dependencies of the program by typing `bundle install` into your console
 
